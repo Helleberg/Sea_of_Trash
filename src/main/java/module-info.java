@@ -8,4 +8,6 @@ module sdu.seaoftrash.seaoftrash {
 
     opens sdu.seaoftrash.seaoftrash to javafx.fxml;
     exports sdu.seaoftrash.seaoftrash;
+    exports sdu.seaoftrash.seaoftrash.controller;
+    opens sdu.seaoftrash.seaoftrash.controller to javafx.fxml;
 }

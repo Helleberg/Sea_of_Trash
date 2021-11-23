@@ -1,4 +1,4 @@
-package sdu.seaoftrash.seaoftrash;
+package sdu.seaoftrash.seaoftrash.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
