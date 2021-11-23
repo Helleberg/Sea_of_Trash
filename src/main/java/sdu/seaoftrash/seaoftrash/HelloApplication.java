@@ -19,12 +19,8 @@ public class HelloApplication extends Application {
         AnimationTimer gameloop = new AnimationTimer() {
             @Override
             public void handle(long nanoTime) {
-
-                initialize.getSpaceShip().update(1.0/60.0);
-                initialize.getBackground().render(initialize.getGraphicsContext());
-                initialize.getSpaceShip().render(initialize.getGraphicsContext());
-                //map.drawGradiant(spaceShip.getPosition().getX(), spaceShip.getPosition().getY(), 800, 800, shadowGraphicsContext);
-
+                // TODO: find render
+                initialize.getMap().renderMap(initialize.getGraphicsContext());
             }
         };
         gameloop.start();

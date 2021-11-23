@@ -9,16 +9,16 @@ public class Sprite {
     private Rectangle boundary;
     private Image spriteImage;
 
-    public Sprite() {
-        this.position = new Vector();
+    public Sprite(double positionX, double positionY) {
+        this.position = new Vector(positionX, positionY);
         this.velocity = new Vector();
         this.boundary = new Rectangle();
         this.rotation = 0;
     }
 
-    public Sprite(String fileName) {
-        this();
-        this.setSpriteImageWithBoundary(fileName);
+    public Sprite(String filename, double positionX, double positionY) {
+        this(positionX, positionY);
+        this.setSpriteImageWithBoundary(filename);
     }
 
     // General Purpose Methods (START)

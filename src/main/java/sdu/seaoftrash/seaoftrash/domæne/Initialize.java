@@ -7,6 +7,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import sdu.seaoftrash.seaoftrash.controller.InputController;
+import sdu.seaoftrash.seaoftrash.domæne.map.Map;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class Initialize {
     private GraphicsContext graphicsContext;
     private double canvasWidth, canvasHeight;
     InputController inputController = new InputController();
+    Map map = new Map();
 
     public Initialize (Stage stage) {
         this.mainStage = stage;
@@ -26,12 +28,19 @@ public class Initialize {
         this.canvasHeight = 800;
     }
 
+    public Map getMap() {
+        return map;
+    }
+
     public void initializeAll() {
         // Initialize presentation layer.
         initializeStage(this.mainStage);
+        this.inputController.initializeInputController(this.mainScene);
 
         // Initialize
-        this.inputController.initializeInputController(this.mainScene);
+
+        this.map.generateMap();
+
     }
 
     private void initializeStage (Stage stage) {
@@ -47,12 +56,12 @@ public class Initialize {
         this.graphicsContext = canvas.getGraphicsContext2D(); // Context object comes from the canvas.
         root.setCenter(canvas); // Sets the canvas to the center child of the BorderPane.
 
-        this.background = new Sprite("file:src/main/java/images/Space800x800-WithStars.png");
+       /* this.background = new Sprite("file:src/main/java/images/Space800x800-WithStars.png");
         this.background.getPosition().setXAndY(this.canvasHeight / 2, this.canvasHeight / 2);
 
         this.spaceShip = new Sprite("file:src/main/java/images/SpaceShip-ButSmoll.png");
         this.spaceShip.getPosition().setXAndY(100, this.canvasHeight / 2);
-        this.spaceShip.getVelocity().setXAndY(50, 0);
+        this.spaceShip.getVelocity().setXAndY(50, 0); */
 
         this.mainStage.show();
     }
