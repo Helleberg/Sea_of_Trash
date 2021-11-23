@@ -3,16 +3,22 @@ package sdu.seaoftrash.seaoftrash.domæne;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import sdu.seaoftrash.seaoftrash.controller.InputController;
+
+import java.util.ArrayList;
 
 public class Initialize {
+    // Stage attributes:
     private Stage mainStage;
     private Scene mainScene;
     private Sprite background;
     private Sprite spaceShip;
     private GraphicsContext graphicsContext;
     private double canvasWidth, canvasHeight;
+    InputController inputController = new InputController();
 
     public Initialize (Stage stage) {
         this.mainStage = stage;
@@ -20,7 +26,15 @@ public class Initialize {
         this.canvasHeight = 800;
     }
 
-    public void setStage (Stage stage) {
+    public void initializeAll() {
+        // Initialize presentation layer.
+        initializeStage(this.mainStage);
+
+        // Initialize
+        this.inputController.initializeInputController(this.mainScene);
+    }
+
+    private void initializeStage (Stage stage) {
         stage.setTitle("Sea of Trash");
 
         // Create the BorderPane (layout manager) as the root of the main Scene, and then attach the Main Scene to the Main Stage.
@@ -39,6 +53,8 @@ public class Initialize {
         this.spaceShip = new Sprite("file:src/main/java/images/SpaceShip-ButSmoll.png");
         this.spaceShip.getPosition().setXAndY(100, this.canvasHeight / 2);
         this.spaceShip.getVelocity().setXAndY(50, 0);
+
+        this.mainStage.show();
     }
 
     public double getCanvasHeight() {

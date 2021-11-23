@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Sea of Trash" target="17" />
+      <module name="Sea of Trash" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

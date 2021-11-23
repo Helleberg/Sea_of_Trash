@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82ed9fdd-203f-4bb5-9303-66b1dd26fbfc" name="Changes" comment="Start updates">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/controller/InputController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Initialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/map/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sdu/seaoftrash/seaoftrash/MapImages/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sdu/seaoftrash/seaoftrash/PlayerImages/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sea of Trash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sea of Trash.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/controller/UIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sdu/seaoftrash/seaoftrash/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sdu/seaoftrash/seaoftrash/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/controller/InputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/controller/InputController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sdu/seaoftrash/seaoftrash/domæne/Initialize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21JcUTndQaQ8I2WbPBEECwFqbJy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,6 +74,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start updates" />
