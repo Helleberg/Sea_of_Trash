@@ -3,7 +3,7 @@ package sdu.seaoftrash.seaoftrash.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class UIController {
     @FXML
     private Label welcomeText;
 
